@@ -1,0 +1,107 @@
+/* Reset dasar */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fef6e4; /* Pastel krem */
+    color: #333333; /* Teks abu gelap */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #a8d5e2; /* Pastel biru */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header .jumbotron h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #ffc7c7; /* Pastel pink */
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #ffe599; /* Pastel kuning */
+    color: #333333;
+}
+
+/* Main content */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 calc(50% - 40px); /* Responsif */
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    color: #ffc7c7; /* Pastel pink */
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+/* Sidebar */
+aside {
+    flex: 1 1 100%; /* Full width di layar kecil */
+    background-color: #e8f1f2; /* Pastel biru muda */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #a8d5e2; /* Pastel biru */
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Responsif */
+@media (min-width: 768px) {
+    aside {
+        flex: 1 1 25%;
+    }
+}
